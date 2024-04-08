@@ -283,15 +283,15 @@ body {
 .product-img-container {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   align-content: space-between;
   justify-content: space-between;
   gap: 0.75em;
   margin-bottom: 2em;
 }
 .product-img {
-  width: 11rem;
-  height: 11rem;
+  width: 13rem;
+  height: 13rem;
 
   display: block;
   margin-right: auto;
