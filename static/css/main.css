@@ -90,19 +90,14 @@ video {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
   background: #12c2e9; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #f64f59,
-    #c471ed,
-    #12c2e9
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #f64f59,
-    #c471ed,
-    #12c2e9
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #f64f59, #c471ed, #12c2e9) fixed; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f64f59, #c471ed, #12c2e9) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header-container,
+.article {
+  border-radius: 0.25em;
 }
 .header-container {
   display: grid;
@@ -132,12 +127,11 @@ body {
 .content {
   border-top: #fff 2px solid;
   border-bottom: #fff 2px solid;
-  color: #fff;
   display: block;
 }
 
 .content h1,
-p {
+.content p {
   text-shadow: 1px 1px 2px black;
   font-weight: 700;
   line-height: 1.25;
@@ -237,6 +231,57 @@ p {
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 0.4rem;
 }
+.main {
+  display: block;
+}
+.article {
+  transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+  background-color: rgba(27, 31, 34, 0.9);
+  margin: 0.75em;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.x-article {
+  font-size: 1.5rem;
+  margin: 0.75rem 0.75rem;
+  align-self: flex-end;
+}
+.article-major {
+  align-self: flex-start;
+  margin: 0 0 2rem 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: solid 1px #ffffff;
+  font-size: 1.25rem;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.article-img-container {
+  display: flex;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  margin-bottom: 2.5em;
+  justify-content: center;
+  align-items: center;
+}
+.article-image {
+  border-radius: 0.25em;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.article p {
+  font-weight: 300;
+  font-size: 0.92rem;
+  line-height: 1.45rem;
+  margin: 0rem 0.75rem 1.5rem 0.75rem;
+
+  text-align: justify;
+}
 #footer {
   width: 100%;
   max-width: 100%;
@@ -251,4 +296,7 @@ p {
   opacity: 0.75;
   margin-bottom: 2em;
   text-transform: uppercase;
+}
+.intro {
+  display: none;
 }
