@@ -283,20 +283,25 @@ body {
 .product-img-container {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   align-content: space-between;
   justify-content: space-between;
   gap: 0.75em;
   margin-bottom: 2em;
 }
 .product-img {
-  width: 13rem;
-  height: 13rem;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
 
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 1em;
   border-radius: 0.5em;
+}
+.card p {
+  text-align: center;
 }
 #footer {
   width: 100%;
