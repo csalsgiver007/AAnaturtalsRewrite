@@ -231,9 +231,6 @@ body {
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 0.4rem;
 }
-.main {
-  display: block;
-}
 .article {
   transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
   background-color: rgba(27, 31, 34, 0.9);
@@ -296,6 +293,6 @@ body {
   margin-bottom: 2em;
   text-transform: uppercase;
 }
-.intro {
+.main .intro {
   display: none;
 }
