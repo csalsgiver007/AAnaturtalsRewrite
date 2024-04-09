@@ -45,3 +45,9 @@ document.addEventListener("click", function (e) {
   else if (e.target.id === "news-btn") renderNews();
   else if (e.target.id === "news-close") closeNews();
 });
+
+//Constants for the article sections
+const introEl = document.getElementById("intro");
+const productsEl = document.getElementById("products");
+const eventsEl = document.getElementById("events");
+const newsEl = document.getElementById("news-article-section");
