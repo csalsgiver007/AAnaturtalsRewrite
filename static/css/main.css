@@ -320,18 +320,20 @@ body {
   margin-bottom: 2em;
 }
 .event-card {
-  margin-bottom: 2rem;
   justify-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
 }
 
 .event-img {
-  display: block;
   width: 20rem;
   height: 20rem;
   object-fit: cover;
   border-radius: 0.25em;
   margin-bottom: 1em;
 }
+
 .event-listing {
   display: grid;
   grid-template-columns: 0.15fr 1fr;
