@@ -1,8 +1,16 @@
+//Constants for the article sections
+
+const introEl = document.getElementById("intro");
+const productsEl = document.getElementById("products");
+const eventsEl = document.getElementById("events");
+const newsEl = document.getElementById("news-article-section");
+
 // Functions to render and hide the article sections
 
 function renderIntro() {
   document.getElementById("header").style.display = "none";
   document.getElementById("intro").style.display = "flex";
+  history.pushState({ page: 2 }, null, "/intro");
 }
 function closeIntro() {
   document.getElementById("intro").style.display = "none";
@@ -11,6 +19,7 @@ function closeIntro() {
 function renderProducts() {
   document.getElementById("header").style.display = "none";
   document.getElementById("products").style.display = "flex";
+  history.pushState({ page: 2 }, null, "/products");
 }
 function closeProducts() {
   document.getElementById("products").style.display = "none";
@@ -19,6 +28,7 @@ function closeProducts() {
 function renderEvents() {
   document.getElementById("header").style.display = "none";
   document.getElementById("events").style.display = "flex";
+  history.pushState({ page: 2 }, null, "/events");
 }
 function closeEvents() {
   document.getElementById("events").style.display = "none";
@@ -27,6 +37,7 @@ function closeEvents() {
 function renderNews() {
   document.getElementById("header").style.display = "none";
   document.getElementById("news-article-section").style.display = "flex";
+  history.pushState({ page: 2 }, null, "/news");
 }
 function closeNews() {
   document.getElementById("news-article-section").style.display = "none";
@@ -46,8 +57,11 @@ document.addEventListener("click", function (e) {
   else if (e.target.id === "news-close") closeNews();
 });
 
-//Constants for the article sections
-const introEl = document.getElementById("intro");
-const productsEl = document.getElementById("products");
-const eventsEl = document.getElementById("events");
-const newsEl = document.getElementById("news-article-section");
+// Event listener to close the article sections when the back button is clicked
+
+window.addEventListener("popstate", function (event) {
+  if (introEl.style.display === "flex") closeIntro();
+  else if (productsEl.style.display === "flex") closeProducts();
+  else if (eventsEl.style.display === "flex") closeEvents();
+  else if (newsEl.style.display === "flex") closeNews();
+});
