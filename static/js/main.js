@@ -1,4 +1,4 @@
-//Constants for the article sections
+//Constants for the article section elements
 
 const introEl = document.getElementById("intro");
 const productsEl = document.getElementById("products");

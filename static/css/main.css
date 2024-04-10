@@ -391,9 +391,17 @@ body {
 }
 .event-title a:hover,
 .news-title a:hover {
-  transition: ease-in-out 0.3s;
   text-decoration: underline;
 }
+.event-location a:link,
+.event-location a:visited {
+  text-decoration: none;
+  color: #12c2e9;
+}
+.event-location a:hover {
+  text-decoration: underline;
+}
+
 .sold-out {
   font-size: 0.6875rem;
   font-weight: 700;
