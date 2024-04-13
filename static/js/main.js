@@ -10,38 +10,46 @@ const newsEl = document.getElementById("news-article-section");
 function renderIntro() {
   document.getElementById("header").style.display = "none";
   document.getElementById("intro").style.display = "flex";
-  history.pushState({ page: 2 }, null, "/intro");
+  window.scrollTo(0, 0);
+  history.pushState({ page: 2 }, null, "");
 }
 function closeIntro() {
   document.getElementById("intro").style.display = "none";
   document.getElementById("header").style.display = "grid";
+  window.scrollTo(0, 0);
 }
 function renderProducts() {
   document.getElementById("header").style.display = "none";
   document.getElementById("products").style.display = "flex";
-  history.pushState({ page: 2 }, null, "/products");
+  window.scrollTo(0, 0);
+  history.pushState({ page: 2 }, null, "");
 }
 function closeProducts() {
   document.getElementById("products").style.display = "none";
   document.getElementById("header").style.display = "grid";
+  window.scrollTo(0, 0);
 }
 function renderEvents() {
   document.getElementById("header").style.display = "none";
   document.getElementById("events").style.display = "flex";
-  history.pushState({ page: 2 }, null, "/events");
+  window.scrollTo(0, 0);
+  history.pushState({ page: 2 }, null, "");
 }
 function closeEvents() {
   document.getElementById("events").style.display = "none";
   document.getElementById("header").style.display = "grid";
+  window.scrollTo(0, 0);
 }
 function renderNews() {
   document.getElementById("header").style.display = "none";
   document.getElementById("news-article-section").style.display = "flex";
-  history.pushState({ page: 2 }, null, "/news");
+  window.scrollTo(0, 0);
+  history.pushState({ page: 2 }, null, "");
 }
 function closeNews() {
   document.getElementById("news-article-section").style.display = "none";
   document.getElementById("header").style.display = "grid";
+  window.scrollTo(0, 0);
 }
 
 // Event listeners for the buttons
